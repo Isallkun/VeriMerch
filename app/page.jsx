@@ -1,9 +1,14 @@
-import Image from "next/image";
+// app/page.js
+import Navbar from '../components/Navbar';
+import How from '../components/How';
+import About from '../components/About';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Image src="/lisk.png" alt="Lisk" width={400} height={400} />
+    <main>
+      <Navbar />
+      {/* <How />
+      <About /> */}
     </main>
   );
 }
