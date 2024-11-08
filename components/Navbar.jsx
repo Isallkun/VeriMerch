@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="container my-2 mx-auto p-5 bg-[rgba(120,108,212,0.2)] rounded-full shadow-lg">
+    <nav className="my-2 mx-3 p-5 bg-[rgba(120,108,212,0.2)] rounded-full shadow-lg">
       <div className="grid grid-cols-3 gap-4 items-center">
         <div className="logo justify-self-start ms-4 text-4xl text-black">LOGO</div>
         <div className="nav-links">
