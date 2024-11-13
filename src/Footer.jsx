@@ -4,7 +4,7 @@ import {FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 h-20">
+    <footer className="text bg-gray-200 h-20">
       <div className="flex flex-row items-center justify-between mx-16 h-full">
 
         <div className="logo text-4xl text-black">LOGO</div>

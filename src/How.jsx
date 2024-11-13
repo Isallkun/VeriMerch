@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HowItWorks() {
     return (
-        <section id="how-it-works" className="bg-[#5045F4] text-white py-28">
+        <section id="how-it-works" className="bg-[#5045F4] text text-white py-28">
             <div className="how-title mb-16">
                 <h1 className="text-6xl text-center">HOW IT WORKS</h1>
             </div>

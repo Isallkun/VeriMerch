@@ -11,7 +11,7 @@ export default function Hero() {
 
     return (
       <section id="scan">
-        <div className="scan container  h-auto flex flex-col items-center justify-self-center text-center py-20 mt-32">
+        <div className="scan text container  h-auto flex flex-col items-center justify-self-center text-center py-20 mt-32">
           <h1 className="grid text-6xl text-black my-8 gap-y-3 leading-relaxed">
             SCAN YOUR QR OR <br />
              BARCODE HERE
@@ -42,22 +42,22 @@ export default function Hero() {
         </div>
         <div className="partner">
           <div className="grid border-dashed border-t-2">
-            <div className="text flex justify-center items-center text-black-700 mt-2">Thrusted by 45M+ users</div>
+            <div className=" flex justify-center items-center text-black mt-2">Be Our Partner</div>
               <div className="images flex justify-center space-x-14 my-4">
                 <div className=" partner-image px-8 py-5 text-center text-black rounded-full bg-[rgba(20,2,254,0.2)]">
-                  be our partner
+                  our partner logo
                 </div>
                 <div className="partner-image px-8 py-5 text-center text-black rounded-full bg-[rgba(20,2,254,0.2)]">
-                  be our partner
+                  our partner logo
                 </div>
                 <div className="partner-image px-8 py-5 text-center text-black rounded-full bg-[rgba(20,2,254,0.2)]">
-                  be our partner
+                  our partner logo
                 </div>
                 <div className="partner-image px-8 py-5 text-center text-black rounded-full bg-[rgba(20,2,254,0.2)]">
-                  be our partner
+                  our partner logo
                 </div>
                 <div className="partner-image px-8 py-5 text-center text-black rounded-full bg-[rgba(20,2,254,0.2)]">
-                  be our partner
+                  our partner logo
                 </div>
               </div>
             </div>

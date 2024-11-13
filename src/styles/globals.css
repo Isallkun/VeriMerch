@@ -16,5 +16,8 @@
 
 body {
   color: var(--foreground);
+}
+
+.text {
   font-family: 'Righteous', sans-serif;
 }

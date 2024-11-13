@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="font-righteous">
+      <body>
         {children}
       </body>
     </html>
