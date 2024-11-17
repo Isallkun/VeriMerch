@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function HowItWorks() {
     return (
@@ -11,35 +10,32 @@ export default function HowItWorks() {
             <div className="container mx-auto h-full grid grid-cols-1 md:grid-cols-3 gap-10 px-8 py-16">
                 {/* Item 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="image bg-gray-300 p-28 rounded-lg mb-10">
-                        <p className="text-black">Icon</p>
+                    <div className="image mb-10">
+                        <Image src="/scan-qr.jpg" alt="QR Code" className="bg-cover bg-center rounded-lg" width={300} height={300}/>
                     </div>
-                    <h4 className="text-xl font-bold mb-2">1. Lorem</h4>
+                    <h4 className="text-xl font-bold mb-2">1. Scan the QR Code</h4>
                     <p className="text-center leading-loose px-14">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, minus! Vero praesentium reprehenderit, eveniet a, voluptatem doloribus similique ad minima molestiae vel corrupti ipsum! Cum molestias tempora nulla incidunt odio.
-                    </p>
+                    Every genuine product comes with a unique QR code. Simply use your smartphone to scan the code, which connects you to the Lisk blockchain verification system.                    </p>
                 </div>
 
                 {/* Item 2 */}
                 <div className="flex flex-col-reverse items-center ">
-                    <div className="image bg-gray-300 p-28 rounded-lg mt-10">
-                        <p className="text-black">Icon</p>
+                    <div className="image mt-10">
+                        <Image src="/verified.jpg" alt="Authentic Product" className="bg-cover bg-center rounded-lg" width={300} height={300}/>
                     </div>
                     <p className="text-center leading-loose px-14">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, omnis! Quam neque temporibus explicabo impedit dolorem ea recusandae dolores architecto expedita doloremque, non libero? Laudantium laboriosam optio ullam quae velit.
-                    </p>
-                    <h4 className="text-xl font-bold mb-2">2. Lorem</h4>
+                    After scanning, you'll be directed to a verification page that shows whether the product is authentic. If it's genuine, you'll see a confirmation message like "Verified Authentic Product."                    </p>
+                    <h4 className="text-xl font-bold mb-2">2. Check Product Authenticity</h4>
                 </div> 
 
                 {/* Item 3 */}
                 <div className="flex flex-col items-center">
-                    <div className="image bg-gray-300 p-28 rounded-lg mb-10">
-                        <p className="text-black">Icon</p>
+                    <div className="image bg-gray-200 rounded-lg mb-10">
+                        <Image src="/loyalty.jpg" alt="QR Code" className="bg-cover bg-center " width={300} height={300}/>
                     </div>
-                    <h4 className="text-xl font-bold mb-2">3. Lorem</h4>
+                    <h4 className="text-xl font-bold mb-2">3. Earn Loyalty Rewards</h4>
                     <p className="text-center leading-loose px-14">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae maxime suscipit sint, quam voluptate, itaque nobis dolorem voluptas nisi ea eaque illo natus amet ullam voluptatum voluptatem necessitatibus sed nihil?
-                    </p>
+                    As a thank you, users who verify authentic products will automatically receive loyalty tokens. These tokens can be redeemed for discounts, exclusive gifts, or special offers from participating brands.                    </p>
                 </div>
             </div>
         </section>

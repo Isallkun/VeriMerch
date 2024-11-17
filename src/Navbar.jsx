@@ -21,7 +21,9 @@ export default function Navbar() {
   return (
     <nav className="text my-2 mx-3 p-5 bg-[rgba(120,108,212,0.2)] rounded-full shadow-lg">
       <div className="grid grid-cols-3 gap-4 items-center">
-        <div className="logo justify-self-start ms-4 text-4xl text-black">LOGO</div>
+        <div className="logo justify-self-start ms-4 text-4xl text-black">
+          <Image src="/logo.png" alt="logo" className="logo bg-cover bg-center" width={70} height={70}/>
+        </div>
         <div className="nav-links">
           <ul className="flex space-x-10 justify-self-center">
             <li>
