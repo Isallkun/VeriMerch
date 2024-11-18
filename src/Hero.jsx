@@ -1,17 +1,21 @@
 "use client";
 
-import React, { useState } from 'react'; 
+import React, { useEffect, useState } from 'react'; 
 import InputModal from '@/components/InputModal';
+import QrScannerModal from '@/components/QrScannerModal';
+
 import Image from 'next/image';
 
 import {BsQrCodeScan} from "react-icons/bs";
 
+
+
+
 export default function Hero() {
+ 
 
   const [modalOpen, setModalOpen] = useState(false);
-  
-  // const [defaultAccount, setDefaultAccount] = useState(null);
-  // const isConnected = !!defaultAccount;
+  const [qrScannerModalOpen, setQrScannerModalOpen] = useState(false);
 
 
     return (
@@ -31,31 +35,12 @@ export default function Hero() {
                 Input Code 
               </button>  
 
-              <button className="p-5 text-white bg-[#1402FE] hover:bg-[rgba(20,2,254,0.2)] hover:text-[#1402FE] hover:ring-2 hover:ring-[#1402FE] rounded-full transition-all ease-linear">
+              <button className="p-5 text-white bg-[#1402FE] hover:bg-[rgba(20,2,254,0.2)] hover:text-[#1402FE] hover:ring-2 hover:ring-[#1402FE] rounded-full transition-all ease-linear"
+               onClick={() => setQrScannerModalOpen(true)}
+              
+              >
                   <BsQrCodeScan size={24} />
               </button>
-
-              {/* <div className="btn-scan flex my-14 space-x-4">           
-            <button
-              className={`btn-input px-10 py-5 text-white bg-[#1402FE] hover:bg-[rgba(20,2,254,0.2)] hover:text-[#1402FE] hover:ring-2 hover:ring-[#1402FE] rounded-full transition-all ease-linear 
-                ${!isConnected ? "opacity-100 cursor-not-allowed" : ""}`}
-              disabled={!isConnected}
-              onClick={() => setModalOpen(true)}
-            >
-              Input Code 
-            </button>  
-
-            <button
-              className={`btn-scan p-5 text-white bg-[#1402FE] hover:bg-[rgba(20,2,254,0.2)] hover:text-[#1402FE] hover:ring-2 hover:ring-[#1402FE] rounded-full transition-all ease-linear 
-                ${!isConnected ? "opacity-100 cursor-not-allowed" : ""}`}
-              disabled={!isConnected}
-            >
-            <BsQrCodeScan size={24} />
-            </button>    
-          </div> */}
-
-
-
             </div>
         </div>
 
@@ -78,6 +63,7 @@ export default function Hero() {
         </div>
 
         <InputModal open={modalOpen} onClose={() => setModalOpen(false)} />
+        <QrScannerModal open={qrScannerModalOpen} onClose={() => setQrScannerModalOpen(false)} />
 
       </section>
       

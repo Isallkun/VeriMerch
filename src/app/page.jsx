@@ -7,6 +7,8 @@ import { ThirdwebProvider } from "thirdweb/react";
 
 
 
+
+
 export default function HomePage() {
   return (
     <main>

@@ -73,7 +73,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-{/* <button className="ConnectButton rounded-full bg-[#1402FE] py-5 px-10 text-white hover:ring-2 hover:ring-[#1402FE] transition-all ease-linear">
-            Connect Wallet
-          </button> */}

@@ -30,8 +30,8 @@ export default function HowItWorks() {
 
                 {/* Item 3 */}
                 <div className="flex flex-col items-center">
-                    <div className="image bg-gray-200 rounded-lg mb-10">
-                        <Image src="/loyalty.jpg" alt="QR Code" className="bg-cover bg-center " width={300} height={300}/>
+                    <div className="image mb-10">
+                        <Image src="/loyalty.jpg" alt="QR Code" className="bg-cover bg-center rounded-lg" width={300} height={300}/>
                     </div>
                     <h4 className="text-xl font-bold mb-2">3. Earn Loyalty Rewards</h4>
                     <p className="text-center leading-loose px-14">
