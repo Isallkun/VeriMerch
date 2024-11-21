@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import InputModal from "../modals/InputModal";
-import QrScannerModal from "../modals/QrScannerModal";
+import InputModal from "@/components/InputModal";
+import QrScannerModal from "@/components/QrScannerModal";
 import Image from "next/image";
 import { BsQrCodeScan } from "react-icons/bs";
 
 import { useConnectedWallets } from "thirdweb/react";
 
-const Hero: React.FC = () => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [qrScannerModalOpen, setQrScannerModalOpen] = useState<boolean>(false);
+export default function Hero(){
+  const [modalOpen, setModalOpen] = useState(false);
+  const [qrScannerModalOpen, setQrScannerModalOpen] = useState(false);
 
   const wallets = useConnectedWallets();
   const isWalletConnected = wallets.length > 0;
@@ -97,5 +97,3 @@ const Hero: React.FC = () => {
     </section>
   );
 };
-
-export default Hero;

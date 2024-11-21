@@ -1,10 +1,7 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -15,7 +12,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
