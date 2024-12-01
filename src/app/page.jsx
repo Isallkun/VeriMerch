@@ -5,10 +5,6 @@ import About from '@/layouts/About';
 import Footer from '@/layouts/Footer';
 import { ThirdwebProvider } from "thirdweb/react";
 
-
-
-
-
 export default function HomePage() {
   return (
     <main>
