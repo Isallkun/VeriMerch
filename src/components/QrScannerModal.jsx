@@ -14,22 +14,24 @@ export default function QrScannerModal({ open, onClose }) {
         qrbox: 250,
       };
 
-      html5QrCode.current.start(
-        { facingMode: "environment" }, 
-        config,
-        (decodedText, decodedResult) => {
-          console.log(`QR Code detected: ${decodedText}`);
-          onClose();
-        },
-        (errorMessage) => {
-          console.log(`QR Code no longer in front of camera. Result: ${errorMessage}`);
-        }
-      ).catch(err => {
-        console.error(`Failed to start scanning: ${err}`);
-      });
+      html5QrCode.current
+        .start(
+          { facingMode: "environment" },
+          config,
+          (decodedText, decodedResult) => {
+            console.log(`QR Code detected: ${decodedText}`);
+            onClose();
+          },
+          (errorMessage) => {
+            console.log(`QR Code no longer in front of camera. Result: ${errorMessage}`);
+          }
+        )
+        .catch((err) => {
+          console.error(`Failed to start scanning: ${err}`);
+        });
 
       return () => {
-        html5QrCode.current.stop().catch(err => {
+        html5QrCode.current.stop().catch((err) => {
           console.error(`Failed to stop scanning: ${err}`);
         });
       };
@@ -44,10 +46,7 @@ export default function QrScannerModal({ open, onClose }) {
         <h2 className="text-xl text-black mb-4">Scan QR Code or Barcode</h2>
         <div id="qr-reader" className="mb-4"></div>
         <div className="flex justify-end">
-          <button
-            onClick={onClose}
-            className="ml-2 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition"
-          >
+          <button onClick={onClose} className="ml-2 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition">
             Close
           </button>
         </div>
